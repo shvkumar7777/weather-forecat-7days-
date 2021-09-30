@@ -63,7 +63,7 @@ function updateDOM(data) {
     data.daily.forEach((day,index) => {
         if (index==0) {
             todayEle.innerHTML = `
-            <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" srcset="">
+            <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" srcset="">
             <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
             <div class="day-temp">Day - ${day.temp.day}&#176 C</div>
             <div class="night-temp">Night - ${day.temp.night}&#176 C</div>
@@ -72,7 +72,7 @@ function updateDOM(data) {
             otherdayforecast += `
             <div class="weather-forecast-item" id="weather-forecast-item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-                <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" alt="weather icon" srcset="">
                 <div class="day-temp">Day - ${day.temp.day}&#176 C</div>
                 <div class="night-temp">Night - ${day.temp.night}&#176 C</div>
             </div>
