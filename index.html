@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - forecast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="current-info">
+
+            <div class="datetime-container">
+                <div class="time" id="time">
+                   12:30<span id="am-pm">AM</span>
+                </div>
+                <div class="date" id="date"></div>
+                <div class="others" id="current-weather-info">
+                    
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Chennai</div>
+                <div class="latlan" id="latlan">124.66/54.674</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="today">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" srcset="">
+            <div class="day">Thursday</div>
+            <div class="day-temp">Day - 25.99&#176 C</div>
+            <div class="night-temp">Night - 21.99&#176 C</div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Friday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Saturday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Sunday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Monday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Tuesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+            <div class="weather-forecast-item" id="weather-forecast-item">
+                <div class="day">Wednesday</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" alt="weather icon" srcset="">
+                <div class="day-temp">Day - 25.99&#176 C</div>
+                <div class="night-temp">Night - 21.99&#176 C</div>
+            </div>
+        </div>
+    </div>  
+    <!-- js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
